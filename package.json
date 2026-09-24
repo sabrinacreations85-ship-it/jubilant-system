@@ -1,0 +1,10 @@
+{
+  "name": "jubilant-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sabrina's Fight browser game",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  }
+}

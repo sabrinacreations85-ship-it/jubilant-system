@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabrina's Fight</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Arena Match</p>
+          <h1>Sabrina's Fight</h1>
+        </div>
+        <button id="reset-button" class="secondary">Reset Match</button>
+      </header>
+
+      <section class="arena">
+        <div class="fighter-card player-card">
+          <div class="fighter-header">
+            <span class="tag">Player</span>
+            <h2>Sabrina</h2>
+          </div>
+          <div class="health-wrap">
+            <div class="bar-labels">
+              <span>Health</span>
+              <span id="player-health-text">100 / 100</span>
+            </div>
+            <div class="health-bar">
+              <div id="player-health-fill" class="health-fill player-fill"></div>
+            </div>
+          </div>
+          <div class="energy-wrap">
+            <div class="bar-labels">
+              <span>Focus</span>
+              <span id="player-energy-text">3 / 3</span>
+            </div>
+            <div class="energy-bar">
+              <div id="player-energy-fill" class="energy-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="versus">VS</div>
+
+        <div class="fighter-card enemy-card">
+          <div class="fighter-header">
+            <span class="tag enemy">Enemy</span>
+            <h2>Night Fang</h2>
+          </div>
+          <div class="health-wrap">
+            <div class="bar-labels">
+              <span>Health</span>
+              <span id="enemy-health-text">110 / 110</span>
+            </div>
+            <div class="health-bar">
+              <div id="enemy-health-fill" class="health-fill enemy-fill"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="attack-button" class="action primary">Attack</button>
+        <button id="block-button" class="action">Block</button>
+        <button id="heal-button" class="action">Heal</button>
+        <button id="special-button" class="action accent">Special</button>
+      </section>
+
+      <section class="status-panel">
+        <h3>Battle Log</h3>
+        <p id="battle-log">The arena doors slam shut. Sabrina steps forward.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
